@@ -4,21 +4,106 @@
 }
 .centerpos{
 position: relative;
-top: 10vh;
-width: 40vw;
-height: 80vh;
+top: 5vh;
+width: 30vw;
+height: 90vh;
 background-color: rgb(211, 146, 146);
 left: 50vw;
 transform: translate(-50%);
-
+border: 2px solid rgb(0, 0, 0);
 }
 .imgblock{
     position: relative;
     width: 20vh;
     height: 15vw;
 
-    top: 5%;
-    right: 5%;
-
+    top: 3vh;
+    right: 3vw;
+    overflow: hidden;
     background-color: blue;
+    border: 2px solid rgb(0, 0, 0);
+}
+.mainimg{
+    position: relative;
+    width: 20vh;
+    height: 15vw;
+
+ 
+    background-color: blue;
+}
+.nameblock{
+    position: relative;
+   
+    right: -8vw;
+    top: -26vh;
+    width: 22vw;
+    height: 10vh;
+    background-color: coral;
+}
+.nameblock h1{
+    position: relative;
+    text-align: center;
+    font: 3vh sans-serif;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+.nameblock h2{
+    position: relative;
+    
+    
+    font: 2vh sans-serif;
+    top: 30%;
+    transform: translate(0 , -50%);
+}
+.nameblock p{
+    position: relative;
+    
+    font: 1.7vh sans-serif;
+    top: 30%;
+    transform: translate(0 , -50%);
+}
+.contactsblock{
+    position: relative;
+   
+    right: -8vw;
+    top: -26vh;
+    width: 22vw;
+    height: 10vh;
+    background-color: rgb(177, 202, 31);
+}
+.contactsblock h2{
+    position: relative;
+    
+    
+    font: 2vh sans-serif;
+   
+}
+.contactsblock p{
+    position: relative;
+    
+    font: 1.7vh sans-serif;
+   
+}
+.aboutblock{
+    position: relative;
+   
+    right: -8vw;
+    top: -26vh;
+    width: 22vw;
+    height: 10vh;
+    background-color: rgb(31, 202, 39);
+}
+.aboutblock h2{
+    position: relative;
+    
+    
+    font: 2vh sans-serif;
+   
+}
+.aboutblock p{
+    position: relative;
+    
+    
+    font: 1.5vh sans-serif;
+   
 }
