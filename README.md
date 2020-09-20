@@ -1,1 +1,1 @@
-https://DIJITEA.github.io/rsschool-cv/cv
+https://DIJITEA.github.io/rsschool-cv
