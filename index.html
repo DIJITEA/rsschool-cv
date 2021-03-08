@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="centerpos">
-<div class="imgblock">
-<img  class="mainimg"src="/photo.jpg" alt="photo">
-</div>
-
-<div class="nameblock">
-    <h1>Oleg Kornyakov</h1>
-</div>
-
-<div class="contactsblock">
-  <h2>CONTACTS</h2>
-  <p> +7(965) - 88 - 666 - 93 </p>
-  <p> kornyakovo@gmail.com </p>
-</div>
-
-<div class="aboutblock">
-    <h2>ABOUT ME</h2>
-    <p> UI programer with 1 year experience developing (own projects). Open to acquiring new skills and learning different frameworks.</p>
-
-  </div>
-
-</div>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainblock">
+      <div class="boxes">
+        <div class="imgbox">
+          <img class="mainimg" src="/photo.jpg" alt="photo" />
+        </div>
+        <div class="infobox">
+            <div class="hiddenscroll">
+          <h1>Kornyakov Oleg</h1>
+          <p>email: kornyakovo@gmail.com</p>
+          <h3>About me</h3>
+          <p>
+            UI programer with **2** years experience developing (own projects).
+            Open to acquiring new skills and learning different frameworks.
+          </p>
+          <h3>Skills</h3>
+          <p>JavaScript HTML CSS GIT OOP TypeScript SASS React Linux</p>
+          <h3>Education</h3>
+          <p>
+            SSU CSIT (unfinished), online courses from the
+            [Stepik](https://stepik.org/) website and various other sources
+          </p>
+          <h3>Code example</h3>
+          <pre><code><span class="colorPurple">function</span> <span class="colorOrange">isPrime</span>(<span class="colorOrange">num</span>) {
+            <span class="colorPurple"> if</span> (<span class="colorBlue">num</span> > <span class="colorOrange">1</span>) {
+                <span class="colorPurple"> for</span> (<span class="colorPurple">var </span> <span class="colorOrange">i</span> = <span class="colorOrange">2</span>; i <= Math.<span class="colorBlue">round</span>(Math.<span class="colorBlue">sqrt</span>(<span class="colorBlue">num</span>)); <span class="colorBlue">i</span>++) {
+                    <span class="colorPurple"> if</span> (<span class="colorBlue">num</span> % <span class="colorBlue">i</span> == <span class="colorOrange">0</span>) {
+                        <span class="colorPurple"> return</span> <span class="colorRed">false</span>;
+                }
+              }
+              <span class="colorPurple"> return</span> <span class="colorRed">true</span>;
+            } <span class="colorPurple"> else return</span> <span class="colorRed">false</span>;
+          }</code></pre>
+          <h3> Work experience</h3>
+          <ul>
+              <li>Self-study projects:</li>
+              <ul>
+              <li><a href="https://dijitea.github.io/krt-app/">MOLE</a> (React) - https://github.com/DIJITEA/krt-app</li>
+              <li> <a href="https://dijitea.github.io/invaders-demo-project/">Invaders</a> - https://github.com/DIJITEA/invaders-demo-project</li>
+            </ul>
+            <li>Working in a startup: </li>
+            <ul>
+                <li><a href="https://dijitea.github.io/ihki/">Buttons</a> - https://github.com/DIJITEA/ihki (Unfortunately, this is all the code that I was allowed to use in my resume.)</li>
+            </ul>
+        
+        </div>
+    </div>
+      </div>
+    </div>
+  </body>
 </html>
