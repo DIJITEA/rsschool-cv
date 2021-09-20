@@ -1,42 +1,6 @@
-h2, h3, p{
+h2, h3, p {
     font-family: 'Almarai';
 }
-
-.start-button___container {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-}
-
-.start-button__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-}
-
-.start-button__half-round {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 7.5em;
-    border: 2px solid white;
-    background-color: bisque;
-}
-
-.start-button__half-round--left {
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-
-.start-button__half-round--right {
-    background-color: rgb(255, 255, 255);
-}
-
-/* --------- */
 
 .main-block {
     display: flex;
@@ -60,8 +24,6 @@ h2, h3, p{
     max-width: 800px;
     background-color: #ffffff1e;
     overflow: hidden;
-    /* box-shadow: 10px 10px 0px 0px rgb(94 123 125 / 57%); */
-    /* backdrop-filter: blur(4px); */
 }
 
 .main-block__photo-container {
@@ -73,14 +35,11 @@ h2, h3, p{
 }
 
 .main-block__photo {
-    /* margin-left: 20px; */
     height: 90%;
-    /* box-shadow: 5px 5px 0px 0px rgb(94 123 125 / 57%); */
 }
 
 .main-block__contact-info {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     height: 25%;
@@ -98,11 +57,9 @@ h2, h3, p{
 }
 
 .main-block__main-info {
-    /* align-self: start; */
     overflow: scroll;
     width: 100%;
     height: 75%;
-    /* background-color: coral; */
 }
 
 .main-block__main-info::-webkit-scrollbar {
@@ -147,5 +104,20 @@ h2, h3, p{
     }
     .main-block__photo-container {
         display: none;
+    }
+}
+
+@media (max-height: 568px) {
+    .main-block__contact-info {
+        font-size: 80%
+    }
+    .footer__img {
+        height: 15px;
+    }
+}
+
+@media (max-height: 480px) {
+    .main-block__contact-info {
+        font-size: 50%
     }
 }
