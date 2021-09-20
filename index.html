@@ -5,56 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./styleReset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./codeExampleStyle.css" />
   </head>
+
   <body>
-    <div class="mainblock">
-      <div class="boxes">
-        <div class="imgbox">
-          <img class="mainimg" src="photo.jpg" alt="photo" />
+    <main class="main-block">
+      <article class="main-block__container">
+        <div class="main-block__photo-container">
+          <img class="main-block__photo" src="./assets/photo.jpg" alt="photo" />
         </div>
-        <div class="infobox">
-            <div class="hiddenscroll">
-          <h1>Kornyakov Oleg</h1>
-          <p>email: kornyakovo@gmail.com</p>
-          <h3>About me</h3>
-          <p>
-            UI programer with 2 years experience developing (own projects).
-            Open to acquiring new skills and learning different frameworks.
-          </p>
-          <h3>Skills</h3>
-          <p>JavaScript HTML CSS GIT OOP TypeScript SASS React Linux</p>
-          <h3>Education</h3>
-          <p>
-            SSU CSIT (unfinished), online courses from the
-            <a href="https://stepik.org/">Stepik</a> website and various other sources
-          </p>
-          <h3>Code example</h3>
-          <pre><code><span class="colorPurple">function</span> <span class="colorOrange">isPrime</span>(<span class="colorOrange">num</span>) {
-            <span class="colorPurple"> if</span> (<span class="colorBlue">num</span> > <span class="colorOrange">1</span>) {
-                <span class="colorPurple"> for</span> (<span class="colorPurple">var </span> <span class="colorOrange">i</span> = <span class="colorOrange">2</span>; i <= Math.<span class="colorBlue">round</span>(Math.<span class="colorBlue">sqrt</span>(<span class="colorBlue">num</span>)); <span class="colorBlue">i</span>++) {
-                    <span class="colorPurple"> if</span> (<span class="colorBlue">num</span> % <span class="colorBlue">i</span> == <span class="colorOrange">0</span>) {
-                        <span class="colorPurple"> return</span> <span class="colorRed">false</span>;
+        <section class="main-block__contact-info">
+          <div>
+            <h2>Kornyakov</h2>
+            <h2>Oleg</h2>
+          </div>
+          <div>
+            <h3>email: kornyakovo@gmail.com</h3>
+            <h3>phone: +7 965 88 666 93</h3>
+          </div>
+        </section>
+        <section class="main-block__main-info">
+          <div class="main-block__content-block">
+            <h3>About me</h3>
+            <p>
+              UI programer with 2 years experience developing (own projects).
+              Open to acquiring new skills and learning different frameworks.
+            </p>
+          </div>
+          <div class="main-block__content-block">
+            <h3>Skills</h3>
+            <p>JavaScript HTML CSS GIT OOP TypeScript SASS React Linux</p>
+          </div>
+          <div class="main-block__content-block">
+            <h3>Education</h3>
+            <p>
+              SSU CSIT (unfinished), online courses from the Stepik website and
+              various other sources
+            </p>
+          </div>
+          <div class="main-block__content-block">
+            <h3>Code example</h3>
+            <pre
+              class="main-block__content-block--pre"
+            ><code><span class="colorPurple">function</span> <span class="colorOrange">isPrime</span>(<span class="colorOrange">num</span>) {
+              <span class="colorPurple"> if</span> (<span class="colorBlue">num</span> > <span class="colorOrange">1</span>) {
+                  <span class="colorPurple"> for</span> (<span class="colorPurple">var </span> <span class="colorOrange">i</span> = <span class="colorOrange">2</span>; i &lt;= Math.<span class="colorBlue">round</span>(Math.<span class="colorBlue">sqrt</span>(<span class="colorBlue">num</span>)); <span class="colorBlue">i</span>++) {
+                      <span class="colorPurple"> if</span> (<span class="colorBlue">num</span> % <span class="colorBlue">i</span> == <span class="colorOrange">0</span>) {
+                          <span class="colorPurple"> return</span> <span class="colorRed">false</span>;
+                  }
                 }
-              }
-              <span class="colorPurple"> return</span> <span class="colorRed">true</span>;
-            } <span class="colorPurple"> else return</span> <span class="colorRed">false</span>;
-          }</code></pre>
-          <h3> Work experience</h3>
-          <ul>
-              <li>Self-study projects:</li>
-              <ul>
-              <li><a href="https://dijitea.github.io/krt-app/">MOLE</a> (React) - https://github.com/DIJITEA/krt-app</li>
-              <li> <a href="https://dijitea.github.io/invaders-demo-project/">Invaders</a> - https://github.com/DIJITEA/invaders-demo-project</li>
-              </ul>
-            <li>Working in a startup: </li>
+                <span class="colorPurple"> return</span> <span class="colorRed">true</span>;
+              } <span class="colorPurple"> else return</span> <span class="colorRed">false</span>;
+            }</code></pre>
+          </div>
+          <div class="main-block__content-block">
+            <h3>Work experience</h3>
             <ul>
-                <li><a href="https://dijitea.github.io/ihki/">Buttons</a> - https://github.com/DIJITEA/ihki (Unfortunately, this is all the code that I was allowed to use in my resume.)</li>
+              <li>Self-study projects:</li>
+
+              <li>
+                <a href="https://dijitea.github.io/krt-app/">MOLE</a> (React) -
+                https://github.com/DIJITEA/krt-app
+              </li>
+              <li>
+                <a href="https://dijitea.github.io/invaders-demo-project/"
+                  >Invaders</a
+                >
+                - https://github.com/DIJITEA/invaders-demo-project
+              </li>
+
+              <li>Working in a startup:</li>
+              <li>
+                <ul>
+                  <li>
+                    <a href="https://dijitea.github.io/ihki/">Buttons</a> -
+                    https://github.com/DIJITEA/ihki (Unfortunately, this is all
+                    the code that I was allowed to use in my resume.)
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </ul>
+          </div>
+        </section>
+      </article>
+      <footer class="footer">
+        <div class="footer__container">
+          <div>
+            <a href="https://github.com/DIJITEA">
+              <img class="footer__img" src="./assets/github.png" alt="github"/>
+            </a>
+          </div>
+          <p>2021</p>
+          <div>
+            <a href="https://rs.school/js/">
+              <img class="footer__img" src="./assets/rs_school_js.svg" alt="rs school"/>
+            </a>
+          </div>
         </div>
-       </div>
-      </div>
-    
+      </footer>
+    </main>
   </body>
 </html>
